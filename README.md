@@ -1,5 +1,4 @@
 # A-Novel-on-Underwater-Robot-Coordinate-Tracking-Algorithm-based-on-USBL
-![Uploading image.png…]()
 
 A Unity-based research project for **USBL (Ultra-Short Baseline) underwater robot coordinate tracking**.
 
