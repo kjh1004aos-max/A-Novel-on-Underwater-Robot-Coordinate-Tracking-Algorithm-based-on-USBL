@@ -1,4 +1,5 @@
 # A-Novel-on-Underwater-Robot-Coordinate-Tracking-Algorithm-based-on-USBL
+![Uploading image.png…]()
 
 A Unity-based research project for **USBL (Ultra-Short Baseline) underwater robot coordinate tracking**.
 
@@ -34,6 +35,8 @@ A Unity-based research project for **USBL (Ultra-Short Baseline) underwater robo
 ## Requirements
 
 ### Hardware
+<img width="364" height="364" alt="image" src="https://github.com/user-attachments/assets/09c07ffe-2ff2-4cbe-9a73-dad1c7101172" />
+
 - **X150 device**
 - RS232 connection to the PC  
   - If you are using a USB-to-RS232 adapter, make sure its driver is installed and the COM port appears in Windows Device Manager.
