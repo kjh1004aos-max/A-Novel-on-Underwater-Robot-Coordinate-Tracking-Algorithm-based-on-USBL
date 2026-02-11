@@ -1,0 +1,3 @@
+/mnt/data/USBL_Unity_Cpp_Plugin/build/CMakeFiles/USBLUnityPlugin.dir
+/mnt/data/USBL_Unity_Cpp_Plugin/build/CMakeFiles/edit_cache.dir
+/mnt/data/USBL_Unity_Cpp_Plugin/build/CMakeFiles/rebuild_cache.dir

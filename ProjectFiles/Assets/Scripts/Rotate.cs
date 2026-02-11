@@ -1,0 +1,45 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Rotate : MonoBehaviour
+{
+    [SerializeField]
+    private Transform cameraArm;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            StartCoroutine("Rotation");
+        }
+    }
+    IEnumerable Rotation()
+    {
+        Vector2 mouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+        Vector3 camAngle = cameraArm.rotation.eulerAngles;
+        float x = camAngle.x + mouseDelta.y;
+
+        if(x < 180f)
+        {
+            x = Mathf.Clamp(x, -1f, 70f);
+        }
+        else
+        {
+            x = Mathf.Clamp(x, 355f, 361f);
+        }
+
+        cameraArm.rotation = Quaternion.Euler(x, camAngle.y + mouseDelta.x, camAngle.z);
+        //transform.Rotate(0, 0, -2);
+        yield return new WaitForSeconds(5f);
+        Debug.Log("로테");
+        //transform.Rotate(0, 0, 0);
+    }
+}
